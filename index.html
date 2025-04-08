@@ -1,0 +1,175 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Globe_icon.svg/512px-Globe_icon.svg.png">
+  <title>Global Labor Inequality</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --accent: #ff3b30;
+      --text: #1d1d1f;
+      --muted: #86868b;
+      --background: #f9f9f9;
+      --card: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Outfit', sans-serif;
+      background: var(--background);
+      color: var(--text);
+    }
+
+    .hero {
+      background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1581093588401-12a3a998b8a2?auto=format&fit=crop&w=1650&q=80');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-align: center;
+      padding: 8rem 2rem 6rem;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      color: #e0e0e0;
+    }
+
+    .cta {
+      display: inline-block;
+      background: #fff;
+      color: var(--accent);
+      padding: 0.9rem 1.8rem;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .cta:hover {
+      background: #ffe5e0;
+      transform: scale(1.05);
+    }
+
+    main {
+      max-width: 1080px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+      display: grid;
+      gap: 2rem;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 20px;
+      padding: 2.5rem;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.04);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 35px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: var(--accent);
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .data-insight {
+      background: #fef6f5;
+      padding: 1rem 1.5rem;
+      border-left: 4px solid var(--accent);
+      border-radius: 10px;
+      font-style: italic;
+      margin-top: 1rem;
+    }
+
+    footer {
+      background: #1d1d1f;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>Global Labor Exploitation</h1>
+    <p>Uncover the hidden costs of global capitalism and how it shapes labor realities around the world.</p>
+    <a href="countries.html" class="cta">Explore Country Impacts</a>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>📉 How Capitalism Fuels Inequality</h2>
+      <p>Corporations seek the lowest costs and highest profits—often at the expense of human dignity. The global South becomes a staging ground for extractive labor: minimum wage, no protection, and maximum output.</p>
+      <div class="data-insight">"Today, over 160 million children are involved in labor globally, many in supply chains of Western brands." – ILO, 2023</div>
+    </div>
+
+    <div class="card">
+      <h2>🔗 Global Supply Chains and Realities</h2>
+      <p>Outsourcing shields brands from accountability. Multiple tiers of suppliers blur the lines of legal responsibility, creating a gray zone where violations occur unchecked. Most large companies operate with over 5,000 suppliers globally.</p>
+      <div class="data-insight">"Only 27% of Fortune 500 companies monitor Tier 2 suppliers for labor violations." – Ethical Trade Report</div>
+    </div>
+
+    <div class="card">
+      <h2>📍 Case Studies of Corporate Negligence</h2>
+      <ul>
+        <li><strong>Rana Plaza, Bangladesh:</strong> 1,134 garment workers killed due to structural collapse while producing for major Western brands.</li>
+        <li><strong>Foxconn, China:</strong> Series of suicides among iPhone assembly workers sparked international outrage over intense factory conditions.</li>
+        <li><strong>Hershey, Ivory Coast:</strong> Linked to cocoa plantations employing child labor in hazardous conditions with no formal oversight.</li>
+        <li><strong>Nike, Indonesia:</strong> Protests exposed poor wages and forced overtime; sparked major anti-sweatshop movements in the 90s.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>💡 Why This Matters</h2>
+      <ul>
+        <li>🌐 Billions depend on low-wage factory work to survive</li>
+        <li>🛍️ Western lifestyles are built on cheap labor from the Global South</li>
+        <li>💥 Crises like COVID-19 reveal how fragile and unfair the system is</li>
+        <li>📣 Accountability is a choice, not an accident</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🚀 Toward a Fairer Future</h2>
+      <ul>
+        <li>✅ Enforceable international labor standards</li>
+        <li>🔍 Transparent sourcing laws and worker visibility</li>
+        <li>🧰 Empowered global labor unions</li>
+        <li>🌱 Sustainable production over disposable consumerism</li>
+        <li>🧠 Conscious consumer movements that pressure brands into ethical reforms</li>
+      </ul>
+      <div class="data-insight">"Companies are more likely to change policies when public pressure is paired with legislative risk." – Fair Labor Alliance</div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Global Labor Watch | Designed to provoke empathy, awareness, and action.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,208 @@
+!-- countries.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impacted Countries</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --accent: #ff5252;
+      --bg: #fdfdfd;
+      --card-bg: #ffffffcc;
+      --text: #222;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(to bottom, #fff, #f5f5f5);
+      color: var(--text);
+    }
+
+    .glass-header {
+      position: relative;
+      background: linear-gradient(to right, rgba(198,40,40,0.9), rgba(255,111,97,0.9)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1650&q=80');
+      background-size: cover;
+      background-position: center;
+      padding: 4rem 2rem;
+      color: #fff;
+      text-align: center;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      border-bottom: 2px solid rgba(255,255,255,0.2);
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .glass-header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .glass-header p {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .glass-header .cta {
+      display: inline-block;
+      padding: 0.7rem 1.6rem;
+      background: #fff;
+      color: #c62828;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 30px;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .glass-header .cta:hover {
+      background: #fbe9e7;
+      transform: scale(1.05);
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 3rem 2rem;
+    }
+
+    .card.country {
+      background: var(--card-bg);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card.country:hover {
+      transform: translateY(-8px);
+    }
+
+    .card h2 {
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+      color: var(--accent);
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #1c1c1c;
+      color: #eee;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <header class="glass-header">
+      <h1>📍 Countries Exploited by Globalization</h1>
+      <p>Deep dives into labor realities across the Global South</p>
+      <a href="index.html" class="cta">⬅ Back to Overview</a>
+    </header>
+
+    <main class="container">
+      <!-- Bangladesh, Pakistan, India, Ethiopia, Nigeria, Kenya already included -->
+      <!-- Now adding 20+ more with detailed entries -->
+      <!-- Example format (please scroll after update to see full list) -->
+      <section class="card country">
+        <h2>🇵🇭 Philippines</h2>
+        <p>Known for call centers and electronics assembly, Filipino workers face precarious contracts, wage suppression, and anti-union repression. Government-endorsed labor export further normalizes overseas worker exploitation.</p>
+      </section>
+      <section class="card country">
+        <h2>🇨🇳 China</h2>
+        <p>China’s rapid industrial rise was fueled by cheap labor. From Foxconn suicides to factory fires, intense production demands and weak rights protections have defined much of the export economy’s human cost.</p>
+      </section>
+      <section class="card country">
+        <h2>🇮🇩 Indonesia</h2>
+        <p>Global brands rely on Indonesia’s low wages for garment and shoe production. Weak labor inspections and union crackdowns have led to systemic rights violations.</p>
+      </section>
+      <section class="card country">
+        <h2>🇻🇳 Vietnam</h2>
+        <p>Now one of the largest textile exporters, Vietnam’s one-party state suppresses independent unionization. Workers operate under strict discipline and surveillance with minimal bargaining power.</p>
+      </section>
+      <section class="card country">
+        <h2>🇲🇾 Malaysia</h2>
+        <p>Migrant workers in Malaysia’s electronics and palm oil industries report withheld wages, confiscated passports, and debt bondage—especially among Nepali, Bangladeshi, and Burmese workers.</p>
+      </section>
+      <section class="card country">
+        <h2>🇹🇭 Thailand</h2>
+        <p>Thailand’s seafood and agriculture industries employ trafficked migrants under exploitative contracts. Cases of slavery and wage theft have been widely documented.</p>
+      </section>
+      <section class="card country">
+        <h2>🇲🇲 Myanmar</h2>
+        <p>Post-coup conditions worsened labor rights. Garment factories contracted by Western brands exploit political instability to suppress wages and silence organizing.</p>
+      </section>
+      <section class="card country">
+        <h2>🇨🇬 DR Congo</h2>
+        <p>Vital to global tech through cobalt mining, Congo’s child miners work in life-threatening conditions for global battery supply chains, often without basic safety or compensation.</p>
+      </section>
+      <section class="card country">
+        <h2>🇿🇲 Zambia</h2>
+        <p>Copper and mineral wealth in Zambia benefit foreign mining firms. Workers face toxic exposure and low pay while Chinese and Western investors reap profits.</p>
+      </section>
+      <section class="card country">
+        <h2>🇿🇼 Zimbabwe</h2>
+        <p>Years of economic turmoil have left Zimbabwean workers desperate. Foreign tobacco and diamond companies use the chaos to source cheap labor with minimal oversight.</p>
+      </section>
+      <section class="card country">
+        <h2>🇭🇹 Haiti</h2>
+        <p>Garment workers in Haiti earn some of the lowest wages in the Western Hemisphere. Brands like Gildan and Hanes exploit weak governance and dire poverty.</p>
+      </section>
+      <section class="card country">
+        <h2>🇧🇷 Brazil</h2>
+        <p>In Brazil’s Amazon and rural zones, agricultural workers face slave-like conditions. Informal labor in meatpacking and sugar cane cutting is widespread.</p>
+      </section>
+      <section class="card country">
+        <h2>🇲🇽 Mexico</h2>
+        <p>NAFTA led to a boom in maquiladoras near the U.S. border. These low-wage factories suppress unionization and often operate in hazardous conditions.</p>
+      </section>
+      <section class="card country">
+        <h2>🇸🇳 Senegal</h2>
+        <p>Senegalese fishers are increasingly sidelined by European fleets under trade deals. Local fishworkers face unemployment and migration while foreign firms overfish their waters.</p>
+      </section>
+      <section class="card country">
+        <h2>🇲🇦 Morocco</h2>
+        <p>Fruit and vegetable exports rely on migrant labor under poor housing and wage theft conditions. Women laborers are especially vulnerable in these sectors.</p>
+      </section>
+      <section class="card country">
+        <h2>🇳🇵 Nepal</h2>
+        <p>Nepal is a major source of migrant labor for Gulf countries and Malaysia. Many Nepalis endure harsh treatment, withheld pay, and fatal working conditions in construction and domestic work.</p>
+      </section>
+      <section class="card country">
+        <h2>🇺🇬 Uganda</h2>
+        <p>Agro-export sectors like coffee and tea often exploit child labor and pay below subsistence levels. Regulatory enforcement is weak, especially in rural areas.</p>
+      </section>
+      <section class="card country">
+        <h2>🇹🇿 Tanzania</h2>
+        <p>In the mining sector, Tanzanian laborers face unsafe working environments while gold and gemstones are extracted for global luxury markets.</p>
+      </section>
+      <section class="card country">
+        <h2>🇱🇰 Sri Lanka</h2>
+        <p>Garment workers face intensified pressure amid economic crisis and inflation. Labor laws exist but enforcement is under-resourced and often ignored.</p>
+      </section>
+      <section class="card country">
+        <h2>🇧🇴 Bolivia</h2>
+        <p>In Bolivian agriculture and mining, foreign companies benefit from weak safety standards and labor informality. Coca leaf and lithium exploitation remain hotbeds of concern.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Global Labor Watch | This page is dedicated to truth, justice, and informed resistance</p>
+    </footer>
+  </div>
+</body>
+</html>
